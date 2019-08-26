@@ -24,11 +24,6 @@ namespace OxyPlotWinFormCSharp
             chart.Model = new OxyPlot.PlotModel { PlotType = OxyPlot.PlotType.XY };
         }
 
-        public double StandardNormalDistribution(double x)
-        {
-            return 1 / Math.Sqrt(2 * Math.PI) * Math.Exp(-x * x / 2);
-        }
-
         public void OnClickBtnFileSelect(object sender, EventArgs e)
         {
             ComOpenFileDialog openFileDlg = new ComOpenFileDialog();
